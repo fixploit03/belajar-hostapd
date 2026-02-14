@@ -19,8 +19,8 @@ country_code=ID
 # ------- WPA/WPA2 -------
 auth_algs=1                   # 1 = Open System Authentication
 wpa=3                         # 3 = WPA + WPA2
-wpa_passphrase=[password]     # Password minimal 8 karakter
-wpa_key_mgmt=WPA-PSK          # Menggunakan PSK
+wpa_passphrase=[password]     # Password untuk WPA/WPA2 (8-63 karakter)
+wpa_key_mgmt=WPA-PSK          # WPA-PSK = Autentikasi untuk WPA/WPA2
 wpa_pairwise=TKIP             # TKIP = Enkripsi untuk WPA
 rsn_pairwise=CCMP             # CCMP = Enkripsi untuk WPA2
 ```
