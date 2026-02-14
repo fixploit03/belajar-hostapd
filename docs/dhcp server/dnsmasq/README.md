@@ -1,8 +1,8 @@
 # dnsmasq
-- [Apa itu dnsmasq?]()
-- [Instalasi]()
-- [Konfigurasi Dasar]()
-- [Penggunaan]()
+- [Apa itu dnsmasq?](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server/dnsmasq#apa-itu-dnsmasq)
+- [Instalasi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server/dnsmasq#instalasi)
+- [Konfigurasi Dasar](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server/dnsmasq#konfigurasi-dasar)
+- [Penggunaan](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server/dnsmasq#penggunaan)
 
 ## Apa itu dnsmasq?
 dnsmasq adalah software yang menyediakan infrastruktur jaringan untuk jaringan skala kecil, mencakup layanan DNS, DHCP, router advertisement, dan network boot. Dirancang ringan dengan footprint kecil sehingga cocok digunakan pada perangkat dengan resource terbatas.
@@ -42,6 +42,15 @@ log-queries
 log-dhcp                                                
 ```
 
+Keterangan:
+- `[interface]`: Nama interface wireless yang digunakan
+- `[ip_awal]`: IP address pertama yang akan dibagikan kepada klien
+- `[ip_akhir]`: IP address terakhir yang akan dibagikan kepada klien
+- `[netmask]`: Subnet mask jaringan
+- `[lease_time]`: Durasi sewa IP address yang diberikan kepada klien
+- `[ip_gateway]`: IP address gateway jaringan
+- `[dns_1]`, `[dns_2]`: IP address DNS server
+  
 ## Penggunaan
 
 #### 1. Beri IP address pada interface wireless:
