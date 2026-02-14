@@ -14,11 +14,11 @@ Belajar Hostapd
 - [Konfigurasi AP]()
   - [OPN](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/opn)
   - [WEP](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wep)
-  - [WPA]()
-  - [WPA2]()
-  - [WPA/WPA2]()
-  - [WPA2/WPA3]()
-  - [WPA3]()
+  - [WPA](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa)
+  - [WPA2](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa2)
+  - [WPA/WPA2](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa-wpa2)
+  - [WPA2/WPA3](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa2-wpa3)
+  - [WPA3](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa3)
 
 ## Homepage
 
