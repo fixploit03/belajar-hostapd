@@ -8,7 +8,7 @@ interface=wlan0
 # Nama driver Wi-Fi
 driver=nl80211
 # Nama Wi-Fi
-ssid=Wi-Fi Gratis
+ssid=Wi-Fi OPN
 # Mode Wi-Fi
 hw_mode=g
 # Channel Wi-Fi
