@@ -1,4 +1,4 @@
-# hw_mode
+# `hw_mode`
 
 | Nilai	| Frekuensi |
 |:--:|:--:|
