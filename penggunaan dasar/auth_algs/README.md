@@ -1,4 +1,4 @@
-# auth_algs
+# `auth_algs`
 
 | Nilai | Jenis Autentikasi |
 |:--:|:--:|
