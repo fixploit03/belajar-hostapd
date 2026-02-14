@@ -19,8 +19,8 @@ country_code=ID
 # ------- WPA3 -------
 auth_algs=1                 # 1 = Open System Authentication
 wpa=2                       # 2 = WPA2 (WPA3 berjalan di atas WPA2)
-sae_password=[password]     # Password minimal 8 karakter
-wpa_key_mgmt=SAE            # SAE = Metode autentikasi untuk WPA3
+sae_password=[password]     # Password untuk WPA3 (maksimal 128 karakter)
+wpa_key_mgmt=SAE            # SAE = Autentikasi untuk WPA3
 rsn_pairwise=GCMP           # GCMP = Enkripsi untuk WPA3
 ieee80211w=2                # 2 = Wajib menggunakan PMF (Protected Management Frame)
 ```
