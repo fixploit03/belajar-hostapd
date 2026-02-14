@@ -12,7 +12,7 @@ Belajar Hostapd
 - [Instalasi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi)
 - [Penggunaan Dasar](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/penggunaan%20dasar)
 - [Konfigurasi AP]()
-  - [OPN]()
+  - [OPN](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/opn)
   - [WEP]()
   - [WPA]()
   - [WPA2]()
