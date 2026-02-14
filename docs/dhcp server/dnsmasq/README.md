@@ -1,4 +1,6 @@
 # dnsmasq
+
+## Daftar Isi
 - [Apa itu dnsmasq?](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server/dnsmasq#apa-itu-dnsmasq)
 - [Instalasi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server/dnsmasq#instalasi)
 - [Konfigurasi Dasar](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server/dnsmasq#konfigurasi-dasar)
