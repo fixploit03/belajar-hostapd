@@ -20,7 +20,7 @@ Belajar Hostapd
   - [WPA2/WPA3](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa2-wpa3)
   - [WPA3](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa3)
 - [Integrasi dengan DHCP Server]()
-  - [dnsmasq]()
+  - [dnsmasq](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server/dnsmasq)
   
 ## Homepage
 
