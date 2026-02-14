@@ -10,6 +10,7 @@ driver=nl80211
 ssid=Wi-Fi Gratis
 hw_mode=g
 channel=6
+country_code=ID
 auth_algs=1
 ```
 
@@ -19,4 +20,5 @@ auth_algs=1
 - `ssid`: Nama Wi-Fi
 - `hw_mode:` Mode Wi-Fi
 - `channel:` Channel Wi-Fi
+- `country_code`: Kode Negara
 - `auth_algs`: Jenis algoritma autentikasi Wi-Fi
