@@ -21,5 +21,5 @@ auth_algs=1                   # 1 = Open System Authentication
 wpa=2                         # 2 = WPA2
 wpa_passphrase=[password]     # Password minimal 8 karakter
 wpa_key_mgmt=WPA-PSK          # Menggunakan PSK
-rsn_pairwise=CCMP             # CCMP = Enkripsi untuk WPA2 (AES)
+rsn_pairwise=CCMP             # CCMP = Enkripsi untuk WPA2
 ```
