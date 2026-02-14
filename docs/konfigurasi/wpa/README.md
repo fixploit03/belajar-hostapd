@@ -19,7 +19,7 @@ country_code=ID
 # ------- WPA -------
 auth_algs=1                   # 1 = Open System Authentication
 wpa=1                         # 1 = WPA
-wpa_passphrase=[password]     # Password minimal 8 karakter
-wpa_key_mgmt=WPA-PSK          # Menggunakan PSK
+wpa_passphrase=[password]     # Password untuk WPA (8-63 karakter)
+wpa_key_mgmt=WPA-PSK          # WPA-PSK = Autentikasi untuk WPA
 wpa_pairwise=TKIP             # TKIP = Enkripsi untuk WPA
 ```
