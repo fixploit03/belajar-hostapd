@@ -10,20 +10,20 @@
 
 ### Allow All
 
-```
+```bash
 macaddr_acl=0
 ```
 
 ### White List
 
-```
+```bash
 macaddr_acl=1
 accept_mac_file=[file]
 ```
 
 ### Black List
 
-```
+```bash
 macaddr_acl=2
 deny_mac_file=[file]
 ```
