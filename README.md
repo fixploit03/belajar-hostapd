@@ -9,8 +9,16 @@
 Belajar Hostapd
 ```
 
-- [Instalasi Hostapd](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/Instalasi%20Hostapd)
-- [Penggunaan Dasar Hostapd](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/Penggunaan%20Dasar%20Hostapd)
+- [Instalasi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/Instalasi%20Hostapd)
+- [Penggunaan Dasar](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/Penggunaan%20Dasar%20Hostapd)
+- [Konfigurasi AP]()
+  - [OPN]()
+  - [WEP]()
+  - [WPA]()
+  - [WPA2]()
+  - [WPA/WPA2]()
+  - [WPA2/WPA3]()
+  - [WPA3]()
 
 ## Homepage
 
