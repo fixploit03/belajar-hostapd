@@ -1,4 +1,4 @@
-# Instalasi Hostapd
+# Instalasi
 
 ## Debian/Ubuntu
 
