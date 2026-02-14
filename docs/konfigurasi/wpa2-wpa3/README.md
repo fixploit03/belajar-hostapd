@@ -21,7 +21,7 @@ auth_algs=1                   # 1 = Open System Authentication
 wpa=2                         # 2 = WPA2 (WPA3 berjalan di atas WPA2)
 wpa_passphrase=[password]     # Password untuk WPA2 (8-63 karakter)
 sae_password=[password]       # Password untuk WPA3 (maksimal 128 karakter)
-wpa_key_mgmt=WPA-PSK SAE      # WPA-PSK = Autentikasi WPA2, SAE = Autentikasi WPA3
+wpa_key_mgmt=WPA-PSK SAE      # WPA-PSK = Autentikasi untuk WPA2, SAE = Autentikasi untuk WPA3
 rsn_pairwise=CCMP             # CCMP = Enkripsi untuk WPA2/WPA3
 ieee80211w=1                  # 1 = PMF opsional (Protected Management Frame)
 ```
