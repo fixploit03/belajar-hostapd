@@ -11,7 +11,6 @@ ssid=Wi-Fi Gratis
 hw_mode=g
 channel=6
 country_code=ID
-auth_algs=1
 ```
 
 **Keterangan Opsi:**
@@ -21,4 +20,3 @@ auth_algs=1
 - `hw_mode:` Mode Wi-Fi
 - `channel:` Channel Wi-Fi
 - `country_code`: Kode Negara
-- `auth_algs`: Jenis algoritma autentikasi Wi-Fi
