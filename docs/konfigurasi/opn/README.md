@@ -17,7 +17,6 @@ channel=6
 country_code=ID
 
 # ------- Open Network -------
-
 auth_algs=1     # 1 = Open System Authentication
 wpa=0           # 0 = Tidak menggunakan WPA/WPA2
 ```
