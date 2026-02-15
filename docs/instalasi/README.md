@@ -6,7 +6,7 @@
   - [Debian/Ubuntu](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#debianubuntu)
   - [Arch Linux](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#arch-linux)
   - [Fedora/RHEL](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#fedorarhel)
-- [Verifikasi Instalasi]()
+- [Verifikasi Instalasi](https://github.com/fixploit03/belajar-hostapd/blob/main/docs/instalasi/README.md#verifikasi-instalasi)
   
 ## Persyaratan
 - Sistem operasi Linux
