@@ -3,15 +3,11 @@
 ## Daftar Isi
 - [Persyaratan](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#persyaratan)
 - [Instalasi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#instalasi)
-  - [Debian/Ubuntu](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#debianubuntu)
-  - [Arch Linux](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#arch-linux)
-  - [Fedora/RHEL](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#fedorarhel)
-- [Verifikasi Instalasi](https://github.com/fixploit03/belajar-hostapd/blob/main/docs/instalasi/README.md#verifikasi-instalasi)
   
 ## Persyaratan
 - Sistem operasi Linux
 - Akses root (`sudo`)
-- Adapter Wi-Fi yang mendukung mode AP
+- Network Interface Card (NIC) yang mendukung mode AP
 - Driver Wi-Fi yang kompatibel dengan `nl80211`
 - Kernel Linux versi 2.6.25 atau lebih baru
 - `iw` dan `wireless-tools`
@@ -38,7 +34,7 @@ sudo pacman -S hostapd
 sudo dnf install hostapd
 ```
 
-## Verifikasi Instalasi
+**Verifikasi Instalasi:**
 
 ```
 hostapd -v
