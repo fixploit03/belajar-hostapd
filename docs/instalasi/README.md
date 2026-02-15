@@ -1,4 +1,4 @@
-# Instalasi Hostapd
+# Instalasi
 
 ## Daftar Isi
 - [Persyaratan](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#persyaratan)
