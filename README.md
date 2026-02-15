@@ -33,11 +33,11 @@ Github: <a href="https://github.com/fixploit03/belajar-hostapd">https://github.c
 - [Logging](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/logging)
   - [Melihat Log Hostapd](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/logging#melihat-log-hostapd)
   - [Menyimpan Log ke File](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/logging#menyimpan-log-ke-file)
-- [Referensi]()
-  - [Dokumentasi Resmi]()
-  - [RFC]()
-  - [Standar IEEE]()
-  - [Tools Terkait]()
+- [Referensi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/referensi#tools-terkait)
+  - [Dokumentasi Resmi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/referensi#dokumentasi-resmi)
+  - [RFC](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/referensi#rfc)
+  - [Standar IEEE](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/referensi#standar-ieee)
+  - [Tools Terkait](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/referensi#tools-terkait)
 ## Homepage
 
 [https://w1.fi/hostapd/](https://w1.fi/hostapd/)
