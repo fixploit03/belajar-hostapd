@@ -22,6 +22,7 @@ Github: <a href="https://github.com/fixploit03/belajar-hostapd">https://github.c
   - [WPA/WPA2](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa-wpa2)
   - [WPA2/WPA3](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa2-wpa3)
   - [WPA3](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa3)
+- [Manajemen Klien]()
 - [Integrasi dengan DHCP Server]()
   - [dnsmasq](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server/dnsmasq)
 - [Internet Sharing (NAT)]()
