@@ -30,7 +30,10 @@ Github: <a href="https://github.com/fixploit03/belajar-hostapd">https://github.c
 - [Integrasi dengan DHCP Server]()
   - [dnsmasq](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server/dnsmasq)
 - [Internet Sharing (NAT)]()
-  
+- [Logging]()
+  - [Melihat Log Hostapd]()
+  - [Menyimpan Log ke File]()
+
 ## Homepage
 
 [https://w1.fi/hostapd/](https://w1.fi/hostapd/)
