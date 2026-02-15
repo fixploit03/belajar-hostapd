@@ -1,6 +1,6 @@
 # Penggunaan Dasar Hostapd
 
-## Daftar Isi:
+## Daftar Isi
 - [Opsi Perintah (CLI)](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/penggunaan%20dasar#opsi-perintah-cli)
 - [Konfigurasi Dasar](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/penggunaan%20dasar#konfigurasi-dasar)
 - [Penggunaan](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/penggunaan%20dasar#penggunaan)
