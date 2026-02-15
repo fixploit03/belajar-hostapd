@@ -6,11 +6,15 @@
   - [Debian/Ubuntu](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#debianubuntu)
   - [Arch Linux](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#arch-linux)
   - [Fedora/RHEL](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#fedorarhel)
-
+- [Verifikasi Instalasi]()
+  
 ## Persyaratan
 - Sistem operasi Linux
 - Akses root (`sudo`)
 - Adapter Wi-Fi yang mendukung mode AP
+- Driver Wi-Fi yang kompatibel dengan `nl80211`
+- Kernel Linux versi 2.6.25 atau lebih baru
+- `iw` dan `wireless-tools`
 - Koneksi internet
 
 ## Instalasi
@@ -32,4 +36,19 @@ sudo pacman -S hostapd
 
 ```
 sudo dnf install hostapd
+```
+
+## Verifikasi Instalasi
+
+```
+hostapd -v
+````
+
+Output:
+
+```
+hostapd v2.10
+User space daemon for IEEE 802.11 AP management,
+IEEE 802.1X/WPA/WPA2/EAP/RADIUS Authenticator
+Copyright (c) 2002-2022, Jouni Malinen <j@w1.fi> and contributors
 ```
