@@ -1,5 +1,53 @@
 # Penggunaan Dasar Hostapd
 
+## Daftar Isi:
+- [Opsi Perintah (CLI)]()
+- [Konfigurasi Dasar]()
+- [Penggunaan]()
+
+## Opsi Perintah (CLI)
+
+```
+sudo hostapd [opsi] [file_config]
+```
+
+| Opsi | Keterangan |
+|:--:|:--|
+| `-h` | Menampilkan bantuan penggunaan |
+| `-d` | Menampilkan pesan debug lebih banyak (`-dd` untuk lebih banyak lagi) |
+| `-B` | Menjalankan daemon di background |
+| `-e` | File entropy |
+| `-g` | Path global control interface |
+| `-G` | Grup untuk control interface |
+| `-P` | File PID |
+| `-K` | Menyertakan data kunci dalam pesan debug |
+| `-i` | Daftar nama interface yang digunakan |
+| `-S` | Memulai semua interface secara sinkron |
+| `-t` | Menyertakan timestamp pada beberapa pesan debug |
+| `-v` | Menampilkan versi hostapd |
+| `-q` | Menampilkan pesan debug lebih sedikit (`-qq` untuk lebih sedikit lagi) |
+
+## Konfigurasi Dasar
+
+```bash
+interface=[interface]
+driver=[driver]
+ssid=[ssid]
+hw_mode=[mode]
+channel=[channel]
+country_code=[kode_negara]
+```
+
+Keterangan:
+- `[interface]`: Nama interface wireless yang digunakan
+- `[driver]`: Nama driver Wi-Fi yang digunakan
+- `[ssid]`: Nama Wi-Fi
+- `[mode]`: Mode Wi-Fi
+- `[channel]`: Channel Wi-Fi
+- `[kode_negara]`: Kode negara
+  
+## Penggunaan
+
 #### 1. Cek interface wireless:
 
 ```
