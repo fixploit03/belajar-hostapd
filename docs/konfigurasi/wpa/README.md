@@ -1,8 +1,8 @@
 # Konfigurasi Hostapd - WPA (Wi-Fi Protected Access)
 
 ## Daftar Isi
-- [WPA-Personal]()
-- [WPA-Enterprise]()
+- [WPA-Personal](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa#wpa-personal)
+- [WPA-Enterprise](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa#wpa-enterprise)
 
 ## WPA-Personal
 
