@@ -1,8 +1,8 @@
 # Instalasi Hostapd
 
 ## Daftar Isi
-- [Persyaratan]()
-- [Instalasi]()
+- [Persyaratan](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#persyaratan)
+- [Instalasi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#instalasi)
 
 ## Persyaratan
 - Sistem operasi Linux
