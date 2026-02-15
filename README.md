@@ -6,7 +6,7 @@
  |  _  | (_) \__ \ || (_| | |_) | (_| |
  |_| |_|\___/|___/\__\__,_| .__/ \__,_|
                           |_|          
-Belajar Hostapd
+Belajar Hostapd Gratis!
 Github: <a href="https://github.com/fixploit03/belajar-hostapd">https://github.com/fixploit03/belajar-hostapd</a>
 </pre>
 </div>
