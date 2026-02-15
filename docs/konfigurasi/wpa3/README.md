@@ -1,8 +1,8 @@
 # Konfigurasi Hostapd - WPA3 (Wi-Fi Protected Access 3)
 
 ## Daftar Isi
-- []()
-- []()
+- [WPA3-SAE](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa3#wpa3-sae)
+- [WPA3-Enterprise](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa3#wpa3-enterprise)
   
 ## WPA3-SAE
 
