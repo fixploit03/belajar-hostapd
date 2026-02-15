@@ -3,6 +3,9 @@
 ## Daftar Isi
 - [Persyaratan](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#persyaratan)
 - [Instalasi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#instalasi)
+  - [Debian/Ubuntu](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#debianubuntu)
+  - [Arch Linux](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#arch-linux)
+  - [Fedora/RHEL](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#fedorarhel)
 
 ## Persyaratan
 - Sistem operasi Linux
