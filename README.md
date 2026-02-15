@@ -1,13 +1,15 @@
-```
-    __               __                  __
-   / /_  ____  _____/ /_____ _____  ____/ /
-  / __ \/ __ \/ ___/ __/ __ `/ __ \/ __  / 
- / / / / /_/ (__  ) /_/ /_/ / /_/ / /_/ /  
-/_/ /_/\____/____/\__/\__,_/ .___/\__,_/   
-                          /_/
-
+<div align="center">
+<pre>
+  _   _           _                  _ 
+ | | | | ___  ___| |_ __ _ _ __   __| |
+ | |_| |/ _ \/ __| __/ _` | '_ \ / _` |
+ |  _  | (_) \__ \ || (_| | |_) | (_| |
+ |_| |_|\___/|___/\__\__,_| .__/ \__,_|
+                          |_|          
 Belajar Hostapd
-```
+Github: <a href="https://github.com/fixploit03/belajar-hostapd">https://github.com/fixploit03/belajar-hostapd</a>
+</pre>
+</div>
 
 - [Instalasi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi)
 - [Penggunaan Dasar](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/penggunaan%20dasar)
