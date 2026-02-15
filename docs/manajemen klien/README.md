@@ -4,8 +4,6 @@
 - [Melihat Daftar Klien](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/manajemen%20klien#melihat-daftar-klien)
 - [Memutus Koneksi Klien](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/manajemen%20klien#memutus-koneksi-klien)
 - [MAC Address Filtering](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/manajemen%20klien#mac-address-filtering)
-  - [Whitelist](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/manajemen%20klien#1-whitelist)
-  - [Blacklist](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/manajemen%20klien#2-blacklist)
 - [Membatasi Jumlah Klien](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/manajemen%20klien#membatasi-jumlah-klien)
 
 ## Melihat Daftar Klien
