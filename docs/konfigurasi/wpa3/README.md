@@ -22,7 +22,7 @@ channel=6
 # Kode Negara
 country_code=ID
 
-# ------- WPA3 -------
+# ------- WPA3-SAE -------
 auth_algs=1                 # 1 = Open System Authentication
 wpa=2                       # 2 = WPA2 (WPA3 berjalan di atas WPA2)
 sae_password=[password]     # Password untuk WPA3 (maksimal 128 karakter)
