@@ -22,7 +22,7 @@ channel=6
 # Kode Negara
 country_code=ID
 
-# ------- WPA -------
+# ------- WPA-Personal -------
 auth_algs=1                   # 1 = Open System Authentication
 wpa=1                         # 1 = WPA
 wpa_passphrase=[password]     # Password untuk WPA (8-63 karakter)
@@ -48,7 +48,7 @@ channel=6
 # Kode Negara
 country_code=ID
 
-# ------- WPA Enterprise -------
+# ------- WPA-Enterprise -------
 auth_algs=1                            # 1 = Open System Authentication
 ieee8021x=1                            # 1 = Aktifkan IEEE 802.1X
 eap_server=0                           # 0 = Gunakan RADIUS server eksternal
