@@ -14,7 +14,7 @@ interface=wlan0
 # Nama driver Wi-Fi
 driver=nl80211
 # Nama Wi-Fi
-ssid=Wi-Fi WPA2
+ssid=WPA2-Personal
 # Mode Wi-Fi
 hw_mode=g
 # Channel Wi-Fi
@@ -40,7 +40,7 @@ interface=wlan0
 # Nama driver Wi-Fi
 driver=nl80211
 # Nama Wi-Fi
-ssid=Wi-Fi WPA2 Enterprise
+ssid=WPA2-Enterprise
 # Mode Wi-Fi
 hw_mode=g
 # Channel Wi-Fi
