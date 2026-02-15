@@ -30,6 +30,22 @@ sudo pacman -S dnsmasq
 sudo dnf install dnsmasq
 ```
 
+**Verifikasi Instalasi:**
+
+```
+dnsmasq -v
+```
+
+Output:
+
+```
+Dnsmasq version 2.90  Copyright (c) 2000-2024 Simon Kelley
+Compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth cryptohash DNSSEC loop-detect inotify dumpfile
+
+This software comes with ABSOLUTELY NO WARRANTY.
+Dnsmasq is free software, and you are welcome to redistribute it
+under the terms of the GNU General Public License, version 2 or 3.
+```
 ## Konfigurasi Dasar
 
 ```bash
