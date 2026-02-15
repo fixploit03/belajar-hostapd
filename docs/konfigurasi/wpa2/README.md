@@ -22,7 +22,7 @@ channel=6
 # Kode Negara
 country_code=ID
 
-# ------- WPA2 -------
+# ------- WPA2-Personal -------
 auth_algs=1                   # 1 = Open System Authentication
 wpa=2                         # 2 = WPA2
 wpa_passphrase=[password]     # Password untuk WPA2 (8-63 karakter)
@@ -32,7 +32,7 @@ rsn_pairwise=CCMP             # CCMP = Enkripsi untuk WPA2
 
 ## WPA2-Enterprise
 
-```
+```bash
 # Konfigurasi Hostapd - WPA2-Enterprise
 
 # Nama interface wireless
@@ -48,7 +48,7 @@ channel=6
 # Kode Negara
 country_code=ID
 
-# ------- WPA2 Enterprise -------
+# ------- WPA2-Enterprise -------
 auth_algs=1                            # 1 = Open System Authentication
 ieee8021x=1                            # 1 = Aktifkan IEEE 802.1X
 eap_server=0                           # 0 = Gunakan RADIUS server eksternal
