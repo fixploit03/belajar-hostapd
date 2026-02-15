@@ -1,4 +1,4 @@
-# Penggunaan Dasar Hostapd
+# Penggunaan Dasar
 
 ## Daftar Isi
 - [Opsi Perintah (CLI)](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/penggunaan%20dasar#opsi-perintah-cli)
@@ -112,7 +112,7 @@ Output:
 * GMAC-256 (00-0f-ac:12)
 ```
 
-#### 4. Buat file konfigurasi Hostapd:
+#### 4. Buat file konfigurasi (`hostapd.conf`):
 
 ```
 nano hostapd.conf
@@ -137,14 +137,14 @@ channel=6
 country_code=ID
 ```
 
-#### 5. Stop service yang konflik dengan Hostapd:
+#### 5. Stop service yang konflik dengan hostapd:
 
 ```
 sudo systemctl stop NetworkManager
 sudo systemctl stop wpa_supplicant
 ```
 
-#### 6. Jalankan Hostapd:
+#### 6. Jalankan hostapd:
 
 ```
 sudo hostapd hostapd.conf
