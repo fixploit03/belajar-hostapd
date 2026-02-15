@@ -56,7 +56,7 @@ eap_server=0                           # 0 = Gunakan RADIUS server eksternal
 wpa=2                                  # 2 = WPA2 (WPA3 berjalan di atas WPA2)
 wpa_key_mgmt=WPA-EAP-SUITE-B-192       # WPA-EAP-SUITE-B-192 = Autentikasi untuk WPA3 Enterprise
 rsn_pairwise=GCMP-256                  # GCMP-256 = Enkripsi untuk WPA3 Enterprise
-ieee80211w=2                           # 2 = Wajib menggunakan PMF
+ieee80211w=2                           # 2 = Wajib menggunakan PMF (Protected Management Frame)
 
 # ------- RADIUS Server -------
 own_ip_addr=127.0.0.1                  # IP address hostapd (NAS)
