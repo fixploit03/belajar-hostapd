@@ -1,19 +1,31 @@
 # Instalasi Hostapd
 
-## Debian/Ubuntu
+## Daftar Isi
+- [Persyaratan]()
+- [Instalasi]()
+
+## Persyaratan
+- Sistem operasi Linux
+- Akses root (`sudo`)
+- Adapter Wi-Fi yang mendukung mode AP
+- Koneksi internet
+
+## Instalasi
+
+### Debian/Ubuntu
 
 ```
 sudo apt-get update
 sudo apt-get install hostapd
 ```
 
-## Arch Linux
+### Arch Linux
 
 ```
 sudo pacman -S hostapd
 ```
 
-## Fedora/RHEL
+### Fedora/RHEL
 
 ```
 sudo dnf install hostapd
