@@ -1,11 +1,11 @@
 # Integrasi dengan DHCP Server
 
 ## Daftar Isi
-- [Apa itu DHCP Server]()
-- [Cara Kerja DHCP]()
-- [Jenis-Jenis DHCP Server]()
-- [Mengapa DHCP Server Diperlukan dalam Hostapd?]()
-- [Integrasi dnsmasq dengan Hostapd]()
+- [Apa itu DHCP Server](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server#apa-itu-dhcp-server)
+- [Cara Kerja DHCP](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server#cara-kerja-dhcp)
+- [Jenis-Jenis DHCP Server](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server#jenis-jenis-dhcp-server)
+- [Mengapa DHCP Server Diperlukan dalam Hostapd?](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server#mengapa-dhcp-server-diperlukan-dalam-hostapd)
+- [Integrasi dnsmasq dengan Hostapd](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server#integrasi-dnsmasq-dengan-hostapd)
  
 ## Apa itu DHCP Server?
 
