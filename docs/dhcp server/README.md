@@ -1,7 +1,7 @@
 # Integrasi dengan DHCP Server
 
 ## Daftar Isi
-- [Apa itu DHCP Server](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server#apa-itu-dhcp-server)
+- [Apa itu DHCP Server?](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server#apa-itu-dhcp-server)
 - [Cara Kerja DHCP](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server#cara-kerja-dhcp)
 - [Jenis-Jenis DHCP Server](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server#jenis-jenis-dhcp-server)
 - [Mengapa DHCP Server Diperlukan dalam Hostapd?](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server#mengapa-dhcp-server-diperlukan-dalam-hostapd)
