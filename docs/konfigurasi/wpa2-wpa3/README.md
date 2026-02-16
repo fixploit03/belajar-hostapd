@@ -1,4 +1,4 @@
-# Konfigurasi Hostapd - WPA2/WPA3 (Wi-Fi Protected Access)
+# Konfigurasi Hostapd - WPA2/WPA3 (Transition Mode)
 
 ## Daftar Isi
 - [WPA2/WPA3-Personal](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa2-wpa3#wpa2wpa3-personal)
