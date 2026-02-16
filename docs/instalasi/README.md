@@ -34,6 +34,19 @@ sudo pacman -S hostapd
 sudo dnf install hostapd
 ```
 
+#### Dari source:
+
+```
+sudo apt-get update
+sudo apt install build-essential gcc make libnl-3-dev libnl-genl-3-dev libssl-dev pkg-config
+wget https://w1.fi/releases/hostapd-2.11.tar.gz
+tar xzvf hostapd-2.11.tar.gz
+cd hostapd-2.11/hostapd
+
+make
+sudo make install
+```
+
 **Verifikasi Instalasi:**
 
 ```
