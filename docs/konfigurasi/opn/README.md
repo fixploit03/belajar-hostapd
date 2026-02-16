@@ -1,7 +1,7 @@
-# Konfigurasi Hostapd - OPN
+# Konfigurasi Hostapd - OPN (Open Network)
 
 ```bash
-# Konfigurasi Hostapd - Open Network (OPN)
+# Konfigurasi Hostapd - OPN (Open Network)
 
 # Nama interface wireless
 interface=wlan0
