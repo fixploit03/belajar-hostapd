@@ -42,7 +42,7 @@ sudo apt install build-essential gcc make libnl-3-dev libnl-genl-3-dev libssl-de
 wget https://w1.fi/releases/hostapd-2.11.tar.gz
 tar xzvf hostapd-2.11.tar.gz
 cd hostapd-2.11/hostapd
-
+wget https://raw.githubusercontent.com/fixploit03/belajar-hostapd/refs/heads/main/docs/instalasi/.config
 make
 sudo make install
 ```
