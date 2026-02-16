@@ -1,4 +1,4 @@
-# Konfigurasi Hostapd - WPA/WPA2 (Wi-Fi Protected Access)
+# Konfigurasi Hostapd - WPA/WPA2 (Mixed Mode)
 
 ## Daftar Isi
 - [WPA/WPA2-Personal](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa-wpa2#wpawpa2-personal)
