@@ -1,12 +1,12 @@
 # Keamanan
 
 ## Daftar Isi
-- [Gunakan Enkripsi yang Kuat]()
-- [Aktifkan Protected Management Frame (PMF)]()
-- [Isolasi Klien]()
-- [Sembunyikan SSID]()
-- [MAC Address Filtering]()
-- [Batasi Jumlah Klien]()
+- [Gunakan Enkripsi yang Kuat](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/keamanan#gunakan-enkripsi-yang-kuat)
+- [Aktifkan Protected Management Frame (PMF)](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/keamanan#aktifkan-protected-management-frame-pmf)
+- [Isolasi Klien](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/keamanan#isolasi-klien)
+- [Sembunyikan SSID](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/keamanan#sembunyikan-ssid)
+- [MAC Address Filtering](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/keamanan#mac-address-filtering)
+- [Batasi Jumlah Klien](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/keamanan#batasi-jumlah-klien)
 
 ## Gunakan Enkripsi yang Kuat
 
