@@ -15,6 +15,7 @@ Github: <a href="https://github.com/fixploit03/belajar-hostapd">https://github.c
 - [Instalasi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi)
 - [Penggunaan Dasar](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/penggunaan%20dasar)
 - [Konfigurasi AP](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi)
+- [Keamanan](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/keamanan)
 - [Manajemen Klien](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/manajemen%20klien)
 - [Integrasi dengan DHCP Server]()
 - [Internet Sharing (NAT)](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/internet%20sharing)
