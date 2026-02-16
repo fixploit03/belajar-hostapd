@@ -136,7 +136,7 @@ sudo netfilter-persistent save
 #### 2. Verifikasi aturan tersimpan:
 
 ```
-cat /etc/iptables/rules.v4
+sudo cat /etc/iptables/rules.v4
 ```
 
 Output:
