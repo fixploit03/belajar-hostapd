@@ -1,12 +1,12 @@
 # Internet Sharing (NAT)
 
 ## Daftar Isi
-- [Apa itu Internet Sharing (NAT)?]()
-- [Persyaratan]()
-- [Instalasi iptables]()
-- [Mengaktifkan IP Forwarding]()
-- [Konfigurasi NAT dengan iptables]()
-- [Menyimpan Aturan iptables]()
+- [Apa itu Internet Sharing (NAT)?](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/internet%20sharing#apa-itu-internet-sharing-nat)
+- [Persyaratan](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/internet%20sharing#persyaratan)
+- [Instalasi iptables](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/internet%20sharing#instalasi-iptables)
+- [Mengaktifkan IP Forwarding](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/internet%20sharing#mengaktifkan-ip-forwarding)
+- [Konfigurasi NAT dengan iptables](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/internet%20sharing#konfigurasi-nat-dengan-iptables)
+- [Menyimpan Aturan iptables](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/internet%20sharing#menyimpan-aturan-iptables)
 
 ## Apa itu Internet Sharing (NAT)?
 
