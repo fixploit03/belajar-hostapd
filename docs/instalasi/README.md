@@ -3,7 +3,11 @@
 ## Daftar Isi
 - [Persyaratan](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#persyaratan)
 - [Instalasi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#instalasi)
-  
+  - [Debian/Ubuntu]()
+  - [Arch Linux]()
+  - [Fedora/RHEL]()
+  - [Dari Source]()
+    
 ## Persyaratan
 - Sistem operasi Linux
 - Akses root (`sudo`)
@@ -34,15 +38,15 @@ sudo pacman -S hostapd
 sudo dnf install hostapd
 ```
 
-#### Dari source:
+### Dari Source
 
 ```
 sudo apt-get update
 sudo apt install build-essential gcc make libnl-3-dev libnl-genl-3-dev libssl-dev pkg-config
-wget https://w1.fi/releases/hostapd-2.11.tar.gz
+wget -4 https://w1.fi/releases/hostapd-2.11.tar.gz
 tar xzvf hostapd-2.11.tar.gz
 cd hostapd-2.11/hostapd
-wget https://raw.githubusercontent.com/fixploit03/belajar-hostapd/refs/heads/main/docs/instalasi/.config
+wget -4 https://raw.githubusercontent.com/fixploit03/belajar-hostapd/refs/heads/main/docs/instalasi/.config
 make
 sudo make install
 ```
