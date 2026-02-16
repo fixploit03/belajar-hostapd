@@ -1,4 +1,4 @@
-# Konfigurasi Hostapd - WEP
+# Konfigurasi Hostapd - WEP (Wired Equivalent Privacy)
 
 ```bash
 # Konfigurasi Hostapd - WEP (Wired Equivalent Privacy)
