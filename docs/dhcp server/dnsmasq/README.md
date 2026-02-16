@@ -1,4 +1,4 @@
-# dnsmasq
+# Integrasi dnsmasq dengan Hostapd
 
 ## Daftar Isi
 - [Apa itu dnsmasq?](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/dhcp%20server/dnsmasq#apa-itu-dnsmasq)
