@@ -8,7 +8,7 @@
   - [openSUSE](#opensuse)
   - [Alpine Linux](#alpine-linux)
   - [FreeBSD](#freebsd)
-  - [From Source]()
+  - [From Source](#from-source)
 - [Verifikasi Instalasi](#verifikasi-instalasi)
 
 ## Instalasi
