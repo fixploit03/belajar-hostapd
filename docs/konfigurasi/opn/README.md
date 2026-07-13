@@ -1,7 +1,7 @@
-# Config hostapd - OPN (Open Network)
+# Config hostapd - OPN
 
 ```bash
-# Config hostapd - OPN (Open Network)
+# Config hostapd - OPN
 
 interface=<interface>
 driver=<driver>
