@@ -12,9 +12,9 @@ Github: <a href="https://github.com/fixploit03/belajar-hostapd">https://github.c
 </div>
 
 - [Pengenalan Hostapd](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/hostapd)
-- [Instalasi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi)
-- [Opsi Perintah (CLI)](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/opsi)
-- [Penggunaan Dasar](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/penggunaan%20dasar)
+- [Instalasi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi) [SIP]
+- [Opsi Perintah (CLI)](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/opsi) [SIP]
+- [Penggunaan Dasar](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/penggunaan%20dasar) [SIP]
 - [Konfigurasi AP](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi)
 - [Keamanan](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/keamanan)
 - [Manajemen Klien](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/manajemen%20klien)
