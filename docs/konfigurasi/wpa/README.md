@@ -1,4 +1,4 @@
-# Config hostapd - WPA
+# Konfigurasi Hostapd - WPA
 
 ## Daftar Isi
 - [WPA-Personal](#wpa-personal)
@@ -7,16 +7,15 @@
 ## WPA-Personal
 
 ```bash
-# Config hostapd - WPA-Personal
-
+# Konfigurasi Hostapd - WPA-Personal
 interface=<interface>
 driver=<driver>
 ssid=<ssid>
 hw_mode=<mode>
 channel=<channel>
+auth_algs=1
 
 # ------- WPA-Personal -------
-auth_algs=1
 wpa=1
 wpa_key_mgmt=WPA-PSK
 wpa_pairwise=TKIP
@@ -29,22 +28,21 @@ wpa_passphrase=<passphrase>
 ## WPA-Enterprise
 
 ```bash
-# Config hostapd - WPA-Enterprise
-
+# Konfigurasi Hostapd - WPA-Enterprise
 interface=<interface>
 driver=<driver>
 ssid=<ssid>
 hw_mode=<mode>
 channel=<channel>
+auth_algs=1
 
 # ------- WPA-Enterprise -------
-auth_algs=1
 wpa=1
 wpa_key_mgmt=WPA-EAP
 wpa_pairwise=TKIP
+ieee8021x=1
 
 # ------- Radius Server -------
-ieee8021x=1
 eap_server=0 # 0 = menggunakan radius server eksternal
 own_ip_addr=<ip_ap>
 auth_server_addr=<ip_radius_server>
@@ -58,4 +56,4 @@ acct_server_shared_secret=<shared_secret>
 ```
 
 > [!WARNING]
-> WPA (versi pertama) menggunakan enkripsi [TKIP](https://en.wikipedia.org/wiki/Temporal_Key_Integrity_Protocol) yang sudah diketahui memiliki celah keamanan dan dapat diserang (misalnya serangan **Beck-Tews** dan **Ohigashi-Morii**). Gunakan WPA2 atau WPA3 untuk keamanan yang lebih baik, WPA hanya disarankan untuk kompatibilitas dengan perangkat lama yang tidak mendukung WPA2/WPA3.
+> WPA menggunakan [TKIP](https://en.wikipedia.org/wiki/Temporal_Key_Integrity_Protocol) yang rentan diserang. Gunakan WPA2/WPA3, WPA hanya untuk kompatibilitas perangkat lama.
