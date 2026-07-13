@@ -56,9 +56,3 @@ acct_server_addr=<ip_radius_server>
 acct_server_port=1813
 acct_server_shared_secret=<shared_secret>
 ```
-
-> [!NOTE]
-> WPA/WPA2 mengaktifkan mode transisi/campuran, mengizinkan perangkat lama yang hanya mendukung WPA (TKIP) maupun perangkat baru yang mendukung WPA2 (CCMP) untuk terhubung ke jaringan yang sama.
-
-> [!WARNING]
-> Karena tetap mengizinkan **TKIP**, mode ini mewarisi celah keamanan WPA versi pertama. Gunakan mode ini hanya jika benar-benar perlu kompatibilitas dengan perangkat lama, dan gunakan WPA2/WPA3 murni bila memungkinkan.
