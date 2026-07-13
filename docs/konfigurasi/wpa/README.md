@@ -22,9 +22,6 @@ wpa_pairwise=TKIP
 wpa_passphrase=<passphrase>
 ```
 
-> [!NOTE]
-> Panjang `passphrase` antara 8-63 karakter ASCII.
-
 ## WPA-Enterprise
 
 ```bash
