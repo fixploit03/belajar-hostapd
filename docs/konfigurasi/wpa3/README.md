@@ -3,7 +3,7 @@
 ## Daftar Isi
 - [WPA3-Personal](#wpa3-personal)
 - [WPA3-Enterprise](#wpa3-enterprise)
-
+  
 ## WPA3-Personal
 
 ```bash
@@ -22,6 +22,9 @@ rsn_pairwise=CCMP
 sae_password=<passphrase>
 ieee80211w=2
 ```
+
+> [!NOTE]
+> Berbeda dari WPA2-Personal, `sae_password` tidak memiliki batasan panjang yang diwajibkan protokol, namun tetap disarankan menggunakan password yang panjang agar lebih tahan terhadap percobaan brute-force. Selain itu, `ieee80211w=2` (PMF wajib) diperlukan karena keamanan SAE bergantung pada Protected Management Frames.
 
 ## WPA3-Enterprise
 
@@ -53,3 +56,6 @@ acct_server_addr=<ip_radius_server>
 acct_server_port=1813
 acct_server_shared_secret=<shared_secret>
 ```
+
+> [!NOTE]
+> Mode Suite B 192-bit menggunakan cipher **GCMP-256** dan memerlukan dukungan penuh dari sertifikat serta RADIUS server, jika salah satu tidak mendukung Suite B, koneksi bisa gagal.
