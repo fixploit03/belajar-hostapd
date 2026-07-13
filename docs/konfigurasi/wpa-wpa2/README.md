@@ -1,66 +1,64 @@
-# Konfigurasi Hostapd - WPA/WPA2 (Mixed Mode)
+# Konfigurasi Hostapd - WPA/WPA2
 
 ## Daftar Isi
-- [WPA/WPA2-Personal](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa-wpa2#wpawpa2-personal)
-- [WPA/WPA2-Enterprise](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa-wpa2#wpawpa2-enterprise)
+- [WPA/WPA2-Personal](#wpawpa2-personal)
+- [WPA/WPA2-Enterprise](#wpawpa2-enterprise)
 
 ## WPA/WPA2-Personal
 
 ```bash
 # Konfigurasi Hostapd - WPA/WPA2-Personal
-
-# Nama interface wireless
-interface=wlan0
-# Nama driver Wi-Fi
-driver=nl80211
-# Nama Wi-Fi
-ssid=Wi-Fi WPA/WPA2
-# Mode Wi-Fi
-hw_mode=g
-# Channel Wi-Fi
-channel=6
-# Kode Negara
-country_code=ID
+interface=<interface>
+driver=<driver>
+ssid=<ssid>
+hw_mode=<mode>
+channel=<channel>
+auth_algs=1
 
 # ------- WPA/WPA2-Personal -------
-auth_algs=1                   # 1 = Open System Authentication
-wpa=3                         # 3 = WPA dan WPA2
-wpa_passphrase=[password]     # Password (8-63 karakter)
-wpa_key_mgmt=WPA-PSK          # WPA-PSK = Autentikasi untuk WPA/WPA2
-wpa_pairwise=TKIP             # TKIP = Enkripsi untuk WPA
-rsn_pairwise=CCMP             # CCMP = Enkripsi untuk WPA2
+wpa=3
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=TKIP
+rsn_pairwise=CCMP
+wpa_passphrase=<passphrase>
 ```
+
+> [!NOTE]
+> Panjang `passphrase` antara 8-63 karakter ASCII.
 
 ## WPA/WPA2-Enterprise
 
 ```bash
 # Konfigurasi Hostapd - WPA/WPA2-Enterprise
-
-# Nama interface wireless
-interface=wlan0
-# Nama driver Wi-Fi
-driver=nl80211
-# Nama Wi-Fi
-ssid=Wi-Fi WPA/WPA2 Enterprise
-# Mode Wi-Fi
-hw_mode=g
-# Channel Wi-Fi
-channel=6
-# Kode Negara
-country_code=ID
+interface=<interface>
+driver=<driver>
+ssid=<ssid>
+hw_mode=<mode>
+channel=<channel>
+auth_algs=1
 
 # ------- WPA/WPA2-Enterprise -------
-auth_algs=1                            # 1 = Open System Authentication
-ieee8021x=1                            # 1 = Aktifkan IEEE 802.1X
-eap_server=0                           # 0 = Gunakan RADIUS server eksternal
-wpa=3                                  # 3 = WPA dan WPA2
-wpa_key_mgmt=WPA-EAP                   # WPA-EAP = Autentikasi untuk WPA/WPA2 Enterprise
-wpa_pairwise=TKIP                      # TKIP = Enkripsi untuk WPA
-rsn_pairwise=CCMP                      # CCMP = Enkripsi untuk WPA2
+wpa=3
+wpa_key_mgmt=WPA-EAP
+wpa_pairwise=TKIP
+rsn_pairwise=CCMP
+ieee8021x=1
 
-# ------- RADIUS Server -------
-own_ip_addr=127.0.0.1                  # IP address hostapd (NAS)
-auth_server_addr=127.0.0.1             # IP address RADIUS server
-auth_server_port=1812                  # Port RADIUS server
-auth_server_shared_secret=[secret]     # Shared secret
+# ------- Radius Server -------
+eap_server=0 # 0 = menggunakan radius server eksternal
+own_ip_addr=<ip_ap>
+auth_server_addr=<ip_radius_server>
+auth_server_port=1812
+auth_server_shared_secret=<shared_secret>
+
+# ------- Radius Accounting -------
+acct_server_addr=<ip_radius_server>
+acct_server_port=1813
+acct_server_shared_secret=<shared_secret>
 ```
+
+> [!NOTE]
+> WPA/WPA2 mengaktifkan mode transisi/campuran, mengizinkan perangkat lama yang hanya mendukung WPA (TKIP) maupun perangkat baru yang mendukung WPA2 (CCMP) untuk terhubung ke jaringan yang sama.
+
+> [!WARNING]
+> Karena tetap mengizinkan **TKIP**, mode ini mewarisi celah keamanan WPA versi pertama. Gunakan mode ini hanya jika benar-benar perlu kompatibilitas dengan perangkat lama, dan gunakan WPA2/WPA3 murni bila memungkinkan.
