@@ -1,15 +1,12 @@
-# Config hostapd - OPN
+# Konfigurasi Hostapd - OPN
 
 ```bash
-# Config hostapd - OPN
-
+# Konfigurasi Hostapd - OPN
 interface=<interface>
 driver=<driver>
 ssid=<ssid>
 hw_mode=<mode>
 channel=<channel>
-
-# ------- Open Network -------
 auth_algs=1
 ```
 
