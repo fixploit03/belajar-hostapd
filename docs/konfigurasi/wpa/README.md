@@ -54,6 +54,3 @@ acct_server_addr=<ip_radius_server>
 acct_server_port=1813
 acct_server_shared_secret=<shared_secret>
 ```
-
-> [!WARNING]
-> WPA menggunakan [TKIP](https://en.wikipedia.org/wiki/Temporal_Key_Integrity_Protocol) yang rentan diserang. Gunakan WPA2/WPA3, WPA hanya untuk kompatibilitas perangkat lama.
