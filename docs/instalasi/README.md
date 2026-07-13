@@ -1,89 +1,65 @@
-# Instalasi
+# Instalasi Hostapd
 
 ## Daftar Isi
-- [Persyaratan](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#persyaratan)
-- [Instalasi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#instalasi)
-  - [Debian/Ubuntu](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#debianubuntu)
-  - [Arch Linux](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#arch-linux)
-  - [Fedora/RHEL](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#fedorarhel)
-  - [Dari Source](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi#dari-source)
-    
-## Persyaratan
-- Sistem operasi Linux
-- Akses root (`sudo`)
-- Network Interface Card (NIC) yang mendukung mode AP
-- Driver Wi-Fi yang kompatibel dengan `nl80211`
-- Kernel Linux versi 2.6.25 atau lebih baru
-- `iw` dan `wireless-tools`
-- Koneksi internet
+- [Instalasi](#instalasi)
+  - [Debian/Ubuntu](#debianubuntu)
+  - [Arch Linux](#arch-linux)
+  - [Fedora/RHEL](#fedorarhel)
+  - [openSUSE](#opensuse)
+  - [Alpine Linux](#alpine-linux)
+  - [FreeBSD](#freebsd)
+- [Verifikasi Instalasi](#verifikasi-instalasi)
 
 ## Instalasi
 
 ### Debian/Ubuntu
 
 ```
-sudo apt-get update
-sudo apt-get install hostapd
+sudo apt update
+sudo apt install hostapd
 ```
 
 ### Arch Linux
 
 ```
-sudo pacman -S hostapd
+sudo pacman -Sy hostapd
 ```
 
 ### Fedora/RHEL
 
 ```
+sudo dnf check-update
 sudo dnf install hostapd
 ```
 
-### Dari Source
+### openSUSE
 
-**Debian/Ubuntu**
-
-```
-sudo apt-get update
-sudo apt install build-essential gcc make libnl-3-dev libnl-genl-3-dev libssl-dev pkg-config
-wget -4 https://w1.fi/releases/hostapd-2.11.tar.gz
-tar xzvf hostapd-2.11.tar.gz
-cd hostapd-2.11/hostapd
-wget -4 https://raw.githubusercontent.com/fixploit03/belajar-hostapd/refs/heads/main/docs/instalasi/.config
-make
-sudo make install
+```bash
+sudo zypper refresh
+sudo zypper install hostapd
 ```
 
-**Arch Linux**
+### Alpine Linux
 
-```
-sudo pacman -Syu
-sudo pacman -S base-devel gcc make libnl openssl pkgconf
-wget -4 https://w1.fi/releases/hostapd-2.11.tar.gz
-tar xzvf hostapd-2.11.tar.gz
-cd hostapd-2.11/hostapd
-wget -4 https://raw.githubusercontent.com/fixploit03/belajar-hostapd/refs/heads/main/docs/instalasi/.config
-make
-sudo make install
+```bash
+sudo apk update
+sudo apk add hostapd
 ```
 
-**Fedora/RHEL**
+### FreeBSD
 
-```
-sudo dnf update
-sudo dnf install gcc make libnl3-devel openssl-devel pkgconfig
-wget -4 https://w1.fi/releases/hostapd-2.11.tar.gz
-tar xzvf hostapd-2.11.tar.gz
-cd hostapd-2.11/hostapd
-wget -4 https://raw.githubusercontent.com/fixploit03/belajar-hostapd/refs/heads/main/docs/instalasi/.config
-make
-sudo make install
+```bash
+sudo pkg update
+sudo pkg install hostapd
 ```
 
-**Verifikasi Instalasi:**
+## Verifikasi Instalasi
+
+Jalankan perintah berikut untuk melihat versi dari `hostapd`:
 
 ```
 hostapd -v
-````
+```
 
 Output:
 
