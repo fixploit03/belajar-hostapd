@@ -156,3 +156,6 @@ User space daemon for IEEE 802.11 AP management,
 IEEE 802.1X/WPA/WPA2/EAP/RADIUS Authenticator
 Copyright (c) 2002-2022, Jouni Malinen <j@w1.fi> and contributors
 ```
+
+> [!NOTE]
+> Versi yang diinstal melalui package manager (`apt`, `pacman`, `dnf`, dll) mungkin berbeda dengan versi yang diinstal dari sumber (from source).
