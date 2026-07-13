@@ -56,6 +56,3 @@ acct_server_addr=<ip_radius_server>
 acct_server_port=1813
 acct_server_shared_secret=<shared_secret>
 ```
-
-> [!NOTE]
-> WPA2 menggunakan cipher [CCMP](https://en.wikipedia.org/wiki/CCMP_(cryptography)) (berbasis AES) yang didefinisikan pada standar [IEEE 802.11i](https://en.wikipedia.org/wiki/IEEE_802.11i-2004), sehingga jauh lebih aman dibanding **TKIP** yang dipakai pada [WPA versi pertama](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa).
