@@ -3,7 +3,7 @@
 ## Daftar Isi
 - [Konfigurasi Dasar](#konfigurasi-dasar)
 - [Penggunaan](#penggunaan)
-  
+
 ## Konfigurasi Dasar
 
 ```bash
@@ -12,7 +12,6 @@ driver=[driver]
 ssid=[ssid]
 hw_mode=[mode]
 channel=[channel]
-country_code=[kode_negara]
 ```
 
 Keterangan:
@@ -21,7 +20,6 @@ Keterangan:
 - `[ssid]`: Nama Wi-Fi
 - `[mode]`: Mode Wi-Fi (lihat tabel di bawah)
 - `[channel]`: Channel Wi-Fi
-- `[kode_negara]`: Kode negara
 
 Nilai `driver` berbeda tergantung sistem operasi yang digunakan:
 
@@ -117,20 +115,12 @@ nano hostapd.conf
 Isi dengan:
 
 ```bash
-# Konfigurasi dasar hostapd
-#
-# Nama interface wireless
+# Konfigurasi Dasar Hostapd
 interface=wlan0
-# Nama driver Wi-Fi
 driver=nl80211
-# Nama Wi-Fi
 ssid="Wi-Fi Gratis"
-# Mode Wi-Fi
 hw_mode=g
-# Channel Wi-Fi
 channel=6
-# Kode Negara
-country_code=ID
 ```
 
 > [!WARNING]
