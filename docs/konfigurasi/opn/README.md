@@ -1,22 +1,14 @@
-# Konfigurasi Hostapd - OPN (Open Network)
+# Config hostapd - OPN (Open Network)
 
 ```bash
-# Konfigurasi Hostapd - OPN (Open Network)
+# Config hostapd - OPN (Open Network)
 
-# Nama interface wireless
-interface=wlan0
-# Nama driver Wi-Fi
-driver=nl80211
-# Nama Wi-Fi
-ssid=Wi-Fi OPN
-# Mode Wi-Fi
-hw_mode=g
-# Channel Wi-Fi
-channel=6
-# Kode Negara
-country_code=ID
+interface=<interface>
+driver=<driver>
+ssid=<ssid>
+hw_mode=<mode>
+channel=<channel>
 
 # ------- Open Network -------
-auth_algs=1     # 1 = Open System Authentication
-wpa=0           # 0 = Tidak menggunakan WPA/WPA2
+auth_algs=1
 ```
