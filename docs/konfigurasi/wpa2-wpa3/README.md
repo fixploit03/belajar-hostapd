@@ -1,4 +1,5 @@
 # Konfigurasi Hostapd - WPA2/WPA3
+
 ## Daftar Isi
 
 - [WPA2/WPA3-Personal](#wpa2wpa3-personal)
@@ -23,9 +24,6 @@ wpa_passphrase=<passphrase>
 sae_password=<passphrase>
 ieee80211w=1
 ```
-
-> [!NOTE]
-> Mode transisi ini mengizinkan perangkat lama yang hanya mendukung WPA2-PSK maupun perangkat baru yang mendukung WPA3-SAE untuk terhubung ke jaringan yang sama. `ieee80211w=1` (PMF opsional) dipakai agar tetap kompatibel dengan perangkat yang belum mendukung PMF.
 
 ## WPA2/WPA3-Enterprise
 
@@ -57,9 +55,3 @@ acct_server_addr=<ip_radius_server>
 acct_server_port=1813
 acct_server_shared_secret=<shared_secret>
 ```
-
-> [!NOTE]
-> Mode transisi ini mengizinkan perangkat yang mendukung WPA2-Enterprise (CCMP) maupun WPA3-Enterprise Suite B (GCMP-256) untuk terhubung ke jaringan yang sama. `ieee80211w=1` (PMF opsional) dipakai agar tetap kompatibel dengan perangkat yang belum mendukung PMF.
-
-> [!WARNING]
-> Karena tetap mengizinkan mekanisme WPA2, mode ini mewarisi sebagian celah keamanan WPA2 (seperti kerentanan terhadap offline dictionary attack pada PSK). Gunakan mode ini hanya untuk masa transisi, dan gunakan WPA3 murni bila seluruh perangkat sudah mendukungnya.
