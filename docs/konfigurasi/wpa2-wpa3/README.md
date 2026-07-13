@@ -1,67 +1,65 @@
-# Konfigurasi Hostapd - WPA2/WPA3 (Transition Mode)
-
+# Konfigurasi Hostapd - WPA2/WPA3
 ## Daftar Isi
-- [WPA2/WPA3-Personal](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa2-wpa3#wpa2wpa3-personal)
-- [WPA2/WPA3-Enterprise](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/wpa2-wpa3#wpa2wpa3-enterprise)
+
+- [WPA2/WPA3-Personal](#wpa2wpa3-personal)
+- [WPA2/WPA3-Enterprise](#wpa2wpa3-enterprise)
 
 ## WPA2/WPA3-Personal
 
 ```bash
 # Konfigurasi Hostapd - WPA2/WPA3-Personal
-
-# Nama interface wireless
-interface=wlan0
-# Nama driver Wi-Fi
-driver=nl80211
-# Nama Wi-Fi
-ssid=WPA2/WPA3-Personal
-# Mode Wi-Fi
-hw_mode=g
-# Channel Wi-Fi
-channel=6
-# Kode Negara
-country_code=ID
+interface=<interface>
+driver=<driver>
+ssid=<ssid>
+hw_mode=<mode>
+channel=<channel>
+auth_algs=1
 
 # ------- WPA2/WPA3-Personal -------
-auth_algs=1                   # 1 = Open System Authentication
-wpa=2                         # 2 = WPA2 (WPA3 berjalan di atas WPA2)
-wpa_passphrase=[password]     # Password untuk WPA2-PSK (8-63 karakter)
-sae_password=[password]       # Password untuk WPA3-SAE (maksimal 128 karakter)
-wpa_key_mgmt=WPA-PSK SAE      # WPA-PSK = WPA2, SAE = WPA3
-rsn_pairwise=CCMP             # CCMP = Enkripsi untuk WPA2/WPA3
-ieee80211w=1                  # 1 = PMF opsional (Protected Management Frame)
+wpa=2
+wpa_key_mgmt=WPA-PSK SAE
+rsn_pairwise=CCMP
+wpa_passphrase=<passphrase>
+sae_password=<passphrase>
+ieee80211w=1
 ```
+
+> [!NOTE]
+> Mode transisi ini mengizinkan perangkat lama yang hanya mendukung WPA2-PSK maupun perangkat baru yang mendukung WPA3-SAE untuk terhubung ke jaringan yang sama. `ieee80211w=1` (PMF opsional) dipakai agar tetap kompatibel dengan perangkat yang belum mendukung PMF.
 
 ## WPA2/WPA3-Enterprise
 
 ```bash
 # Konfigurasi Hostapd - WPA2/WPA3-Enterprise
-
-# Nama interface wireless
-interface=wlan0
-# Nama driver Wi-Fi
-driver=nl80211
-# Nama Wi-Fi
-ssid=WPA2/WPA3-Enterprise
-# Mode Wi-Fi
-hw_mode=g
-# Channel Wi-Fi
-channel=6
-# Kode Negara
-country_code=ID
+interface=<interface>
+driver=<driver>
+ssid=<ssid>
+hw_mode=<mode>
+channel=<channel>
+auth_algs=1
 
 # ------- WPA2/WPA3-Enterprise -------
-auth_algs=1                            # 1 = Open System Authentication
-ieee8021x=1                            # 1 = Aktifkan IEEE 802.1X
-eap_server=0                           # 0 = Gunakan RADIUS server eksternal
-wpa=2                                  # 2 = WPA2 (WPA3 berjalan di atas WPA2)
-wpa_key_mgmt=WPA-EAP WPA-EAP-SHA256    # WPA-EAP = WPA2, WPA-EAP-SHA256 = WPA3
-rsn_pairwise=CCMP                      # CCMP = Enkripsi untuk WPA2/WPA3
-ieee80211w=1                           # 1 = PMF opsional (Protected Management Frame)
+wpa=2
+wpa_key_mgmt=WPA-EAP WPA-EAP-SUITE-B-192
+rsn_pairwise=CCMP GCMP-256
+ieee8021x=1
+ieee80211w=1
 
-# ------- RADIUS Server -------
-own_ip_addr=127.0.0.1                  # IP address hostapd (NAS)
-auth_server_addr=127.0.0.1             # IP address RADIUS server
-auth_server_port=1812                  # Port RADIUS server
-auth_server_shared_secret=[secret]     # Shared secret
+# ------- Radius Server -------
+eap_server=0 # 0 = menggunakan radius server eksternal
+own_ip_addr=<ip_ap>
+auth_server_addr=<ip_radius_server>
+auth_server_port=1812
+auth_server_shared_secret=<shared_secret>
+
+# ------- Radius Accounting -------
+acct_server_addr=<ip_radius_server>
+acct_server_port=1813
+acct_server_shared_secret=<shared_secret>
 ```
+
+> [!NOTE]
+> Mode transisi ini mengizinkan perangkat yang mendukung WPA2-Enterprise (CCMP) maupun WPA3-Enterprise Suite B (GCMP-256) untuk terhubung ke jaringan yang sama. `ieee80211w=1` (PMF opsional) dipakai agar tetap kompatibel dengan perangkat yang belum mendukung PMF.
+
+> [!WARNING]
+> Karena tetap mengizinkan mekanisme WPA2, mode ini mewarisi sebagian celah keamanan WPA2 (seperti kerentanan terhadap offline dictionary attack pada PSK). Gunakan mode ini hanya untuk masa transisi, dan gunakan WPA3 murni bila seluruh perangkat sudah mendukungnya.
