@@ -8,6 +8,7 @@
   - [openSUSE](#opensuse)
   - [Alpine Linux](#alpine-linux)
   - [FreeBSD](#freebsd)
+  - [From Source]()
 - [Verifikasi Instalasi](#verifikasi-instalasi)
 
 ## Instalasi
@@ -53,6 +54,92 @@ sudo pkg update
 sudo pkg install hostapd
 ```
 
+### From Source
+
+1. Instal dependensi yang dibutuhkan:
+   
+   ```bash
+   sudo apt update
+   sudo apt install -y build-essential pkg-config libnl-3-dev libnl-genl-3-dev libssl-dev wget
+   ```
+2. Download source code hostapd:
+
+   ```bash
+   wget https://w1.fi/releases/hostapd-2.11.tar.gz
+   ```
+3. Ekstrak source code hostapd:
+
+   ```
+   tar -xzvf hostapd-2.11.tar.gz
+   ```
+4. Pindah ke direktori hostapd:
+
+   ```bash
+   cd hostapd-2.11/hostapd/
+   ```
+5. Salin konfigurasi default hostapd:
+
+   ```bash
+   cp defconfig .config
+   ```
+6. Edit file `.config`:
+
+   ```bash
+   nano .config
+   ```
+7. Aktifkan fitur berikut sesuai kebutuhan:
+
+   Untuk mengaktifkan fitur-fitur di bawah ini, cari baris opsinya pada file `.config`, lalu hapus tanda pagar (`#`) di depannya.
+   
+   #### Mode/Band
+
+   Wi-Fi 5:
+
+   ```
+   CONFIG_IEEE80211AC=y
+   ```
+
+   Wi-Fi 6:
+
+   ```bash
+   CONFIG_IEEE80211AX=y
+   ```
+
+   #### Keamanan
+
+   WEP:
+
+   ```bash
+   CONFIG_WEP=y
+   ```
+
+   WPA3 (SAE):
+
+   ```bash
+   CONFIG_SAE=y
+   ```
+
+   WPA3 (SAE-PK):
+
+   ```bash
+   CONFIG_SAE_PK=y
+   ```
+   OWE:
+
+   ```bash
+   CONFIG_OWE=y
+   ```
+8. Compile:
+
+   ```bash
+   make -j$(nproc)
+   ```
+9. Instal:
+
+   ```bash
+   sudo make install
+   ```
+   
 ## Verifikasi Instalasi
 
 Jalankan perintah berikut untuk melihat versi dari `hostapd`:
