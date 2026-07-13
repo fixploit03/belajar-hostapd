@@ -23,6 +23,8 @@ Github: <a href="https://github.com/fixploit03/belajar-hostapd">https://github.c
 - [Logging](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/logging)
 - [Troubleshooting](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/troubleshooting)
 - [Referensi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/referensi#tools-terkait)
+- [Lisensi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/lisensi) [SIP]
+  
 ## Homepage
 
 [https://w1.fi/hostapd/](https://w1.fi/hostapd/)
