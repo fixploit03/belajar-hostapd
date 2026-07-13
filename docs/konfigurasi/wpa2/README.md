@@ -23,9 +23,6 @@ rsn_pairwise=CCMP
 wpa_passphrase=<passphrase>
 ```
 
-> [!NOTE]
-> Panjang `passphrase` antara 8-63 karakter ASCII.
-
 ## WPA2-Enterprise
 
 ```bash
