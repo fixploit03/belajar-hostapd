@@ -11,4 +11,4 @@
 - [OWE](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/konfigurasi/owe) [SIP]
 
 > [!NOTE]
-> Tidak semua konfigurasi dapat digunakan jika hostapd diinstal melalui package manager (`apt`, `pacman`, `dnf`, dll.), karena fitur yang tersedia tergantung dari opsi build yang digunakan oleh maintainer distro masing-masing. Untuk dapat menggunakan semua konfigurasi yang tersedia di sini, disarankan untuk menginstal hostapd [dari source](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi).
+> Tidak semua konfigurasi di dokumentasi ini dapat langsung digunakan jika hostapd diinstal melalui package manager (`apt`, `pacman`, `dnf`, dll.), karena fitur yang tersedia bergantung pada opsi build yang dipilih oleh maintainer masing-masing distro. Agar dapat menggunakan seluruh fitur yang dibahas di sini, disarankan untuk menginstal hostapd [dari source](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/instalasi).
