@@ -22,9 +22,7 @@ Dengan hostapd, sebuah laptop, Raspberry Pi, atau perangkat apa pun yang memilik
 - Karena sifatnya open-source, hostapd banyak digunakan sebagai basis oleh berbagai proyek lain, termasuk firmware router seperti [OpenWrt](https://openwrt.org/), serta banyak dipakai di kalangan peneliti keamanan siber untuk keperluan pengujian jaringan wireless.
 
 ## Fungsi & Kegunaan Utama
-
-Hostapd memiliki beberapa fungsi inti, di antaranya:
-1. **Membuat Access Point Berbasis Software**: mengubah kartu Wi-Fi biasa menjadi pemancar sinyal AP tanpa perlu perangkat router fisik.
+1. **Membuat Access Point Berbasis Software**: mengubah kartu Wi-Fi biasa menjadi Access Point (AP) tanpa perlu perangkat router fisik.
 2. **Mengelola Autentikasi dan Koneksi Klien**: menentukan perangkat mana saja yang boleh terhubung ke jaringan Wi-Fi tersebut.
 3. **Menjadi Sarana Riset dan Simulasi Keamanan Wireless**: berkat sifatnya yang fleksibel dan bisa dikonfigurasi secara mendetail, hostapd banyak dipakai untuk kebutuhan pengujian jaringan.
 
@@ -36,10 +34,10 @@ Secara sederhana, alur kerja hostapd adalah sebagai berikut:
 [Kartu Wi-Fi] <--> [Driver Kernel (mac80211/nl80211)] <--> [Hostapd] <--> [Klien Wi-Fi]
 ```
 
-- **Kartu Wi-Fi** harus mendukung mode AP (_master mode_) agar bisa digunakan oleh hostapd.
-- **Driver Kernel** (umumnya berbasis `mac80211` dengan antarmuka `nl80211`) menjadi jembatan komunikasi antara hardware Wi-Fi dan software.
-- **Hostapd** membaca file konfigurasi (biasanya `hostapd.conf`), lalu mengatur kartu Wi-Fi agar bekerja dalam mode AP sesuai parameter yang ditentukan (SSID, channel, jenis enkripsi, dan lain-lain).
-- **Klien** yang mencoba terhubung akan melalui proses autentikasi yang dikelola langsung oleh hostapd.
+1. **Kartu Wi-Fi** harus mendukung mode AP (_master mode_) agar bisa digunakan oleh hostapd.
+2. **Driver Kernel** (umumnya berbasis `mac80211` dengan antarmuka `nl80211`) menjadi jembatan komunikasi antara hardware Wi-Fi dan software.
+3. **Hostapd** membaca file konfigurasi (biasanya `hostapd.conf`), lalu mengatur kartu Wi-Fi agar bekerja dalam mode AP sesuai parameter yang ditentukan (SSID, channel, jenis enkripsi, dan lain-lain).
+4. **Klien** yang mencoba terhubung akan melalui proses autentikasi yang dikelola langsung oleh hostapd.
 
 ## Fitur-Fitur Utama
 - Dukungan enkripsi **WEP, WPA, WPA2, dan WPA3**.
