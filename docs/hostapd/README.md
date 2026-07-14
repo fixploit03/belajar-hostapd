@@ -10,23 +10,23 @@
 
 ## Apa itu Hostapd?
 
-**Hostapd** (singkatan dari _Host Access Point Daemon_) adalah sebuah _daemon_ (program latar belakang) di sistem operasi Linux/Unix yang berfungsi untuk mengubah perangkat wireless (Wi-Fi) menjadi **Access Point (AP)**.
+**Hostapd** (singkatan dari _Host Access Point Daemon_) adalah sebuah _daemon_ (program latar belakang) di sistem operasi [Linux](https://en.wikipedia.org/wiki/Linux)/[Unix](https://en.wikipedia.org/wiki/Unix) yang berfungsi untuk mengubah perangkat wireless (Wi-Fi) menjadi **Access Point (AP)**.
 
-Dengan hostapd, sebuah laptop, Raspberry Pi, atau perangkat apa pun yang memiliki kartu Wi-Fi yang mendukung mode AP dapat berfungsi layaknya router Wi-Fi. Perangkat tersebut dapat memancarkan sinyal, menangani autentikasi, dan mengelola koneksi klien tanpa perlu perangkat keras router khusus.
+Dengan hostapd, sebuah laptop, Raspberry Pi, atau perangkat apa pun yang memiliki kartu Wi-Fi yang mendukung mode AP dapat berfungsi layaknya **router Wi-Fi**. Perangkat tersebut dapat memancarkan sinyal, menangani autentikasi, dan mengelola koneksi klien tanpa perlu perangkat keras router khusus.
 
 ## Sejarah & Latar Belakang
-- Hostapd dikembangkan oleh [Jouni Malinen](mailto:j@w1.fi), seorang programmer asal Finlandia yang juga dikenal sebagai kontributor aktif di dunia open-source terkait teknologi wireless.
-- Proyek ini pertama kali dirilis pada awal tahun 2000-an sebagai bagian dari kebutuhan akan software Access Point yang bisa berjalan di sistem Linux, tanpa bergantung pada firmware router bawaan pabrik.
-- Hostapd satu basis kode (_codebase_) dengan `wpa_supplicant`. Keduanya dikembangkan oleh orang yang sama dan saling melengkapi. Bedanya, `wpa_supplicant` berperan sebagai _client_ yang menghubungkan perangkat ke jaringan Wi-Fi, sedangkan hostapd berperan sebagai _access point/server_ yang menyediakan jaringan tersebut.
-- Seiring waktu, hostapd terus dikembangkan untuk mendukung standar keamanan Wi-Fi terbaru, mulai dari WEP, WPA, WPA2, hingga WPA3 yang digunakan saat ini.
-- Karena sifatnya open-source, hostapd banyak digunakan sebagai basis oleh berbagai proyek lain, termasuk firmware router seperti OpenWrt, serta banyak dipakai di kalangan peneliti keamanan siber untuk keperluan pengujian jaringan wireless.
+- Hostapd dikembangkan oleh [Jouni Malinen](mailto:j@w1.fi), seorang programmer asal **Finlandia** yang juga dikenal sebagai kontributor aktif di dunia open-source terkait teknologi wireless.
+- Proyek ini pertama kali dirilis pada awal tahun **2000-an** sebagai bagian dari kebutuhan akan software Access Point yang bisa berjalan di sistem Linux, tanpa bergantung pada firmware router bawaan pabrik.
+- Hostapd satu basis kode (_codebase_) dengan `wpa_supplicant`. Keduanya dikembangkan oleh orang yang sama dan saling melengkapi. Bedanya, `wpa_supplicant` berperan sebagai _client_ yang menghubungkan perangkat ke jaringan Wi-Fi, sedangkan `hostapd` berperan sebagai _access point/server_ yang menyediakan jaringan tersebut.
+- Seiring waktu, hostapd terus dikembangkan untuk mendukung standar keamanan Wi-Fi terbaru, mulai dari **WEP**, **WPA**, **WPA2**, hingga **WPA3** yang digunakan saat ini.
+- Karena sifatnya open-source, hostapd banyak digunakan sebagai basis oleh berbagai proyek lain, termasuk firmware router seperti [OpenWrt](https://openwrt.org/), serta banyak dipakai di kalangan peneliti keamanan siber untuk keperluan pengujian jaringan wireless.
 
 ## Fungsi & Kegunaan Utama
 
 Hostapd memiliki beberapa fungsi inti, di antaranya:
-1. **Membuat Access Point berbasis software**: mengubah kartu Wi-Fi biasa menjadi pemancar sinyal AP tanpa memerlukan perangkat router fisik.
-2. **Mengelola autentikasi dan koneksi klien**: mengatur perangkat mana saja yang diizinkan terhubung ke jaringan Wi-Fi yang dibuat.
-3. **Menjadi sarana riset dan pengujian keamanan wireless**: karena sifatnya yang fleksibel dan dapat dikonfigurasi secara detail, hostapd sering dipakai untuk kebutuhan pengujian dan simulasi jaringan.
+1. **Membuat Access Point Berbasis Software**: mengubah kartu Wi-Fi biasa menjadi pemancar sinyal AP tanpa perlu perangkat router fisik.
+2. **Mengelola Autentikasi dan Koneksi Klien**: menentukan perangkat mana saja yang boleh terhubung ke jaringan Wi-Fi tersebut.
+3. **Menjadi Sarana Riset dan Simulasi Keamanan Wireless**: berkat sifatnya yang fleksibel dan bisa dikonfigurasi secara mendetail, hostapd banyak dipakai untuk kebutuhan pengujian jaringan.
 
 ## Cara Kerja Hostapd
 
