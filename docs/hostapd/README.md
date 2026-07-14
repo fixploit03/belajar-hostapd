@@ -1,48 +1,66 @@
 # Pengenalan Hostapd
 
 ## Daftar Isi
-- [Apa itu Hostapd?](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/hostapd#apa-itu-hostapd)
-- [Cara Kerja](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/hostapd#cara-kerja)
-- [Fitur](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/hostapd#fitur)
-- [Lisensi](https://github.com/fixploit03/belajar-hostapd/tree/main/docs/hostapd#lisensi)
+- [Apa itu Hostapd?](#apa-itu-hostapd)
+- [Sejarah & Latar Belakang](#sejarah--latar-belakang)
+- [Fungsi & Kegunaan Utama](#fungsi--kegunaan-utama)
+- [Cara Kerja Hostapd](#cara-kerja-hostapd)
+- [Fitur-Fitur Utama](#fitur-fitur-utama)
+- [Kelebihan & Kekurangan](#kelebihan--kekurangan)
 
 ## Apa itu Hostapd?
 
-Hostapd (*Host Access Point Daemon*) adalah program daemon yang berjalan di user space untuk mengelola access point dan authentication server. Hostapd memungkinkan network interface card (NIC) berfungsi sebagai access point Wi-Fi dan authentication server pada sistem Linux.
+**Hostapd** (singkatan dari _Host Access Point Daemon_) adalah sebuah _daemon_ (program latar belakang) di sistem operasi Linux/Unix yang berfungsi untuk mengubah perangkat wireless (Wi-Fi) menjadi **Access Point (AP)**.
 
-Hostapd dikembangkan oleh **Jouni Malinen** sejak tahun 2002 dan saat ini mendukung Linux (driver berbasis `mac80211`) dan FreeBSD (`net80211`).
+Dengan hostapd, sebuah laptop, Raspberry Pi, atau perangkat apa pun yang memiliki kartu Wi-Fi yang mendukung mode AP dapat berfungsi layaknya router Wi-Fi. Perangkat tersebut dapat memancarkan sinyal, menangani autentikasi, dan mengelola koneksi klien tanpa perlu perangkat keras router khusus.
 
-## Cara Kerja
+## Sejarah & Latar Belakang
+- Hostapd dikembangkan oleh [Jouni Malinen](mailto:j@w1.fi), seorang programmer asal Finlandia yang juga dikenal sebagai kontributor aktif di dunia open-source terkait teknologi wireless.
+- Proyek ini pertama kali dirilis pada awal tahun 2000-an sebagai bagian dari kebutuhan akan software Access Point yang bisa berjalan di sistem Linux, tanpa bergantung pada firmware router bawaan pabrik.
+- Hostapd satu basis kode (_codebase_) dengan `wpa_supplicant`. Keduanya dikembangkan oleh orang yang sama dan saling melengkapi. Bedanya, `wpa_supplicant` berperan sebagai _client_ yang menghubungkan perangkat ke jaringan Wi-Fi, sedangkan hostapd berperan sebagai _access point/server_ yang menyediakan jaringan tersebut.
+- Seiring waktu, hostapd terus dikembangkan untuk mendukung standar keamanan Wi-Fi terbaru, mulai dari WEP, WPA, WPA2, hingga WPA3 yang digunakan saat ini.
+- Karena sifatnya open-source, hostapd banyak digunakan sebagai basis oleh berbagai proyek lain, termasuk firmware router seperti OpenWrt, serta banyak dipakai di kalangan peneliti keamanan siber untuk keperluan pengujian jaringan wireless.
 
-Hostapd berjalan sebagai daemon di background dan bertindak sebagai komponen backend yang mengontrol autentikasi. Hostapd berkomunikasi dengan kernel melalui driver `nl80211` menggunakan Netlink API.
+## Fungsi & Kegunaan Utama
 
-Alur kerjanya secara umum:
+Hostapd memiliki beberapa fungsi inti, di antaranya:
+1. **Membuat Access Point berbasis software**: mengubah kartu Wi-Fi biasa menjadi pemancar sinyal AP tanpa memerlukan perangkat router fisik.
+2. **Mengelola autentikasi dan koneksi klien**: mengatur perangkat mana saja yang diizinkan terhubung ke jaringan Wi-Fi yang dibuat.
+3. **Menjadi sarana riset dan pengujian keamanan wireless**: karena sifatnya yang fleksibel dan dapat dikonfigurasi secara detail, hostapd sering dipakai untuk kebutuhan pengujian dan simulasi jaringan.
 
-1. Hostapd membaca file konfigurasi (`hostapd.conf`)
-2. Hostapd menginisialisasi interface wireless ke mode AP melalui driver `nl80211`
-3. Perangkat klien melakukan proses asosiasi ke AP
-4. Hostapd menangani proses autentikasi (WPA handshake, 4-Way Handshake, dsb.)
-5. Setelah autentikasi berhasil, klien diizinkan mengakses jaringan
+## Cara Kerja Hostapd
 
-Hostapd juga menyediakan frontend command line bernama `hostapd_cli` untuk memantau dan mengontrol daemon dari terminal.
+Secara sederhana, alur kerja hostapd adalah sebagai berikut:
 
-## Fitur
+```
+[Kartu Wi-Fi] <--> [Driver Kernel (mac80211/nl80211)] <--> [Hostapd] <--> [Klien Wi-Fi]
+```
 
-Hostapd mendukung berbagai fitur, di antaranya:
+- **Kartu Wi-Fi** harus mendukung mode AP (_master mode_) agar bisa digunakan oleh hostapd.
+- **Driver Kernel** (umumnya berbasis `mac80211` dengan antarmuka `nl80211`) menjadi jembatan komunikasi antara hardware Wi-Fi dan software.
+- **Hostapd** membaca file konfigurasi (biasanya `hostapd.conf`), lalu mengatur kartu Wi-Fi agar bekerja dalam mode AP sesuai parameter yang ditentukan (SSID, channel, jenis enkripsi, dan lain-lain).
+- **Klien** yang mencoba terhubung akan melalui proses autentikasi yang dikelola langsung oleh hostapd.
 
-- Manajemen access point IEEE 802.11
-- WPA-Personal (PSK) dan WPA-Enterprise (EAP/RADIUS)
-- WPA, WPA2, WPA3, dan IEEE 802.11i/RSN penuh
-- Manajemen kunci: CCMP, TKIP, WEP104, WEP40
-- RSN: PMKSA caching dan pre-autentikasi
-- IEEE 802.11r (Fast BSS Transition)
-- IEEE 802.11w (Protected Management Frames)
-- RADIUS client, RADIUS accounting, dan RADIUS authentication server
-- Metode EAP: EAP-TLS, EAP-PEAP, EAP-TTLS, EAP-SIM, EAP-AKA, dan lainnya
-- Wi-Fi Protected Setup (WPS)
+## Fitur-Fitur Utama
+- Dukungan enkripsi **WEP, WPA, WPA2, dan WPA3**.
+- Dukungan autentikasi **802.1X/EAP** (RADIUS) untuk skala enterprise.
+- Dukungan **WMM/QoS** untuk prioritas trafik.
+- Dukungan **Multi-BSSID/Virtual AP**, satu kartu Wi-Fi bisa memancarkan lebih dari satu SSID.
+- **MAC filtering** untuk membatasi perangkat yang boleh atau tidak boleh terhubung.
+- Dukungan **hidden SSID**.
+- Logging dan debugging yang cukup lengkap.
 
-## Lisensi
+## Kelebihan & Kekurangan
 
-Hostapd dirilis di bawah lisensi **BSD-3-Clause** (tanpa advertisement clause). Lisensi ini mengizinkan penggunaan, distribusi, dan modifikasi source code, baik dalam bentuk source maupun binary, selama memenuhi ketentuan lisensi yang berlaku.
+**Kelebihan:**
 
-> Copyright (c) 2002-2024, Jouni Malinen \<j@w1.fi\> and contributors
+- Gratis dan open-source.
+- Ringan, bisa berjalan di perangkat dengan spesifikasi rendah (misalnya Raspberry Pi).
+- Sangat fleksibel dan dapat dikustomisasi sesuai kebutuhan.
+- Terus dikembangkan secara aktif, sehingga tetap mengikuti perkembangan standar keamanan Wi-Fi.
+
+**Kekurangan:**
+
+- Konfigurasi dilakukan lewat file teks (CLI), tidak seintuitif GUI router pada umumnya.
+- Membutuhkan driver dan kartu Wi-Fi yang kompatibel dengan mode AP.
+- Kurang cocok untuk pengguna awam yang tidak familiar dengan Linux.
